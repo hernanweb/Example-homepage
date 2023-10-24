@@ -36,16 +36,24 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
+        display="flex"
+        justifyContent={"center"}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        Hi there! I&apos;m a web developer based in &nbsp;
+        <Image 
+        src="/images/flagec.png"
+        alt='Ecuador FLag'
+        width="25"
+        height="25"
+        />
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            HernánWeb
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Web Developer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -64,7 +72,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/hernan.png"
               alt="Profile image"
               borderRadius="full"
               width="100"
