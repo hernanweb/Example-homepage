@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub, IoMicCircleSharp } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -80,10 +80,24 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
+
+          <LinkItem href="/" path={path}>
+            Blogs
           </LinkItem>
-          <LinkItem href="https://blog.hernanweb.com/">Uses</LinkItem>
+      
+          <LinkItem
+            href="/podcast"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+            
+          >
+            <IoMicCircleSharp />
+            Podcast
+          </LinkItem>
+
           <LinkItem
             target="_blank"
             href="https://github.com/craftzdog/craftzdog-homepage"
@@ -111,22 +125,22 @@ const Navbar = props => {
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">
-                  About
+                  Acerca
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/">
+                  Blogs
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
                   Works
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/posts">
-                  Posts
-                </MenuItem>
-                <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
-                  Uses
+                <MenuItem as={MenuLink} href="/podcast">
+                  Podcast  &nbsp; <IoMicCircleSharp />
                 </MenuItem>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://github.com/hernanweb"
                 >
-                  View Source
+                  View Source &nbsp; <IoLogoGithub />
                 </MenuItem>
               </MenuList>
             </Menu>
