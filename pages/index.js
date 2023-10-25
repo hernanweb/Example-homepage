@@ -4,7 +4,6 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
   Button,
   List,
   ListItem,
@@ -16,11 +15,14 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoFacebook
+} from 'react-icons/io5'
 import Image from 'next/image'
+import Flag from '../components/flagec'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -37,15 +39,9 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
         display="flex"
-        justifyContent={"center"}
+        justifyContent={'center'}
       >
-        Hi there! I&apos;m a web developer based in &nbsp;
-        <Image 
-        src="/images/flagec.png"
-        alt='Ecuador FLag'
-        width="25"
-        height="25"
-        />
+        <Flag />
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -84,29 +80,14 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Acerca 👾
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers.
+          Hola🫵, te doy la bienvenida a mi sitio web, donde podrás encontrar algunos de mis proyectos personales en el cual además; comparto artículos de tecnología, negocios y reflexiones personales. En la actualidad  soy fundador de{' '}
+          <NextLink href="/works/koonectic" passHref scroll={false}>
+            <Link>Koonectic</Link>
+          </NextLink>
+          , una plataforma de desarrollo y comunidad Tech. Te invito a visitar mi blog y a que te suscribas a mi newsletter, donde cada semana comparto un resumen de lo que está pasando en el mundo de la tecnología y los negocios digitales
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -116,127 +97,101 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            My portfolio
+            Mis Proyectos 
           </Button>
         </Box>
       </Section>
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Bio 🧔‍♂️
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>1993</BioYear>
+          10/31 Cuenca (🎃), Ecuador.
         </BioSection>
         <BioSection>
           <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          Fundador HomeMedia - Sitio Web dedicado al SEO y Marketing Digital
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2018</BioYear>
+          Fundador de Nómada Coworking - Espacio dedicado al desarrollo y Consultoría de Tecnologías y Startups
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>2020 - presente</BioYear>
+          Fundador de Koonectic - Comunidad digital enfocada en Ciencia, Tecnología y Desarrollo de Sistemas
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          I * R🤘CK 
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
+          Radio Locución 🎙️, Música 🎸,{' '}
+          <Link href="/" target="_blank">
+            Code ⌨️
           </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          , Deportes ⚽🥎 {' '}
         </Paragraph>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+          En la web 🤙
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/hernanweb" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @hernanweb
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://twitter.com/hernanwebec" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @inkdrop_app (English)
+                @hernanwebec
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="https://www.facebook.com/hernanwebec" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoLogoFacebook />}
               >
-                @craftzdog (日本語)
+                @hernanwebec
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link href="https://instagram.com/hernanwebec" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @craftzdog
+                @hernanwebec
               </Button>
             </Link>
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;150k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
-
         <Heading as="h3" variant="section-title">
           Newsletter
         </Heading>
-        <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
-        </p>
+        <p>Tech FM 🎙️</p>
 
         <Box align="center" my={4}>
           <Button
@@ -246,7 +201,7 @@ const Home = () => (
             leftIcon={<EmailIcon />}
             colorScheme="teal"
           >
-            Sign up my newsletter here
+            Suscríbete a mi newsletter aquí 👈
           </Button>
         </Box>
       </Section>

@@ -23,7 +23,7 @@ const Logo = () => {
   const zhumirImg = `/images/zhumir.png`
   return (
     <Link href="/">
-      <Link href="">
+      <Link href="./">
         <LogoBox>
           <Image src={zhumirImg} width={35} height={35} alt="Logo" />
           <Text

@@ -29,7 +29,7 @@ const Main = ({ children, router }) => {
         <meta name="og:title" content="HernánWeb" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.craftz.dog/card.png" />
-        <meta charset="UTF-8"/>
+        <meta charSet="UTF-8"/>
         <title>HernánWeb - Homepage</title>
       </Head>
 
