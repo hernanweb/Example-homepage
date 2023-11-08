@@ -8,7 +8,8 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  Divider
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -84,7 +85,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Hola🫵, te doy la bienvenida a mi sitio web, donde podrás encontrar algunos de mis proyectos personales en el cual además; comparto artículos de tecnología, negocios y reflexiones personales. En la actualidad  soy fundador de{' '}
-          <NextLink href="/works/koonectic" passHref scroll={false}>
+          <NextLink href="https://koonectic.com/" passHref scroll={false} target="_blank">
             <Link>Koonectic</Link>
           </NextLink>
           , una plataforma de desarrollo y comunidad Tech. Te invito a visitar mi blog y a que te suscribas a mi newsletter, donde cada semana comparto un resumen de lo que está pasando en el mundo de la tecnología y los negocios digitales
@@ -130,7 +131,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Radio Locución 🎙️, Música 🎸,{' '}
-          <Link href="/" target="_blank">
+          <Link href="https://github.com/hernanweb" target="_blank">
             Code ⌨️
           </Link>
           , Deportes ⚽🥎 {' '}
@@ -205,6 +206,8 @@ const Home = () => (
           </Button>
         </Box>
       </Section>
+
+      <Divider my={6} />
     </Container>
   </Layout>
 )

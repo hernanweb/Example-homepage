@@ -12,25 +12,24 @@ const Main = ({ children, router }) => {
         <meta name="description" content="Hernan's homepage" />
         <meta name="author" content="HernánWeb" />
         <meta name="author" content="HernánWeb" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="zhumir.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="twitter:title" content="Hernán Quillay Cevallos" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@hernanwebec" />
         <meta name="twitter:creator" content="@hernanwebec" />
-        <meta name="twitter:image" content="https://www.craftz.dog/card.png" />
+        <meta name="twitter:image" content="https://www.hernanweb/hernan.png" />
         <meta property="og:site_name" content="HernánWeb" />
         <meta name="og:title" content="HernánWeb" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.craftz.dog/card.png" />
-        <meta charSet="UTF-8"/>
+        <meta property="og:image" content="https://www.hernanweb/hernan.png" />
+        <meta charSet="UTF-8" />
         <title>HernánWeb - Homepage</title>
       </Head>
 
       <NavBar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
-        
         {children}
 
         <Footer />
