@@ -11,7 +11,7 @@ import {
   chakra,
   Badge
 } from '@chakra-ui/react'
-import { ChevronRightIcon, InfoOutlineIcon, EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, InfoOutlineIcon} from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'

@@ -18,7 +18,7 @@ const Work = () => (
         Koonectic <Badge>2020 🏷️</Badge>
       </Title>
       <P>
-      Somos Comunidad, somos cultura: "Identidad que conecta comunidad." | Ciencia, Cultura y Tecnología.
+      Somos Comunidad, somos cultura: &quot; Identidad que conecta comunidad.&quot; | Ciencia, Cultura y Tecnología.
 
       </P>
       <List ml={4} my={4}>
