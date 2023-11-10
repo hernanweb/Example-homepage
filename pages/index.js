@@ -214,7 +214,7 @@ const Home = () => (
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="https://hernanblog.com/"
+            href="https://blog.hernanweb.com/"
             scroll={false}
             leftIcon={<InfoOutlineIcon />}
             colorScheme="teal"
