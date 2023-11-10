@@ -11,7 +11,7 @@ import {
   chakra,
   Badge
 } from '@chakra-ui/react'
-import { ChevronRightIcon, InfoOutlineIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, InfoOutlineIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -24,8 +24,6 @@ import {
 } from 'react-icons/io5'
 import Image from 'next/image'
 import Flag from '../components/flagec'
-
-
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -52,9 +50,9 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             HernánWeb
           </Heading>
-          <Badge>Web Developer</Badge><br />
+          <Badge>Web Developer</Badge>
+          <br />
           <Badge>Make Internet Great Again! 🔥</Badge>
-          
         </Box>
         <Box
           flexShrink={0}
@@ -88,11 +86,22 @@ const Home = () => (
           Acerca 👾
         </Heading>
         <Paragraph>
-          Hola🫵, te doy la bienvenida a mi sitio web, donde podrás encontrar algunos de mis proyectos personales en el cual además; comparto artículos de tecnología, negocios y reflexiones personales. En la actualidad  soy fundador de{' '}
-          <NextLink href="https://koonectic.com/" passHref scroll={false} target="_blank">
+          Hola🫵, te doy la bienvenida a mi sitio web, donde podrás encontrar
+          algunos de mis proyectos personales en el cual además; comparto
+          artículos de tecnología, negocios y reflexiones personales. En la
+          actualidad soy fundador de{' '}
+          <NextLink
+            href="https://koonectic.com/"
+            passHref
+            scroll={false}
+            target="_blank"
+          >
             <Link>Koonectic</Link>
           </NextLink>
-          , una plataforma de desarrollo y comunidad Tech. Te invito a visitar mi blog y a que te suscribas a mi newsletter donde cada semana comparto un resumen de lo que está pasando en el mundo de la tecnología y los negocios digitales
+          , una plataforma de desarrollo y comunidad Tech. Te invito a visitar
+          mi blog y a que te suscribas a mi newsletter donde cada semana
+          comparto un resumen de lo que está pasando en el mundo de la
+          tecnología y los negocios digitales
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -102,7 +111,7 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            Mis Proyectos 
+            Mis Proyectos
           </Button>
         </Box>
       </Section>
@@ -121,24 +130,26 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2018</BioYear>
-          Fundador de Nómada Coworking - Espacio dedicado al desarrollo y Consultoría de Tecnologías y Startups
+          Fundador de Nómada Coworking - Espacio dedicado al desarrollo y
+          Consultoría de Tecnologías y Startups
         </BioSection>
         <BioSection>
           <BioYear>2020 - presente</BioYear>
-          Fundador de Koonectic - Comunidad digital enfocada en Ciencia, Tecnología y Desarrollo de Sistemas
+          Fundador de Koonectic - Comunidad digital enfocada en Ciencia,
+          Tecnología y Desarrollo de Sistemas
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I * R🤘CK 
+          I * R🤘CK
         </Heading>
         <Paragraph>
           Radio Locución 🎙️, Música 🎸,{' '}
           <Link href="https://github.com/hernanweb" target="_blank">
             Code ⌨️
           </Link>
-          , Deportes ⚽🥎 {' '}
+          , Deportes ⚽🥎{' '}
         </Paragraph>
       </Section>
 
@@ -194,10 +205,12 @@ const Home = () => (
         </List>
 
         <Heading as="h3" variant="section-title">
-          Newsletter
+          Contacto
         </Heading>
-        <p>Tech FM 🎙️</p>
 
+        <Badge> ✉️ contacto@hernanweb.com</Badge>
+        <br />
+        <br />
         <Box align="center" my={4}>
           <Button
             as={NextLink}
@@ -211,7 +224,6 @@ const Home = () => (
           </Button>
         </Box>
       </Section>
-
     </Container>
   </Layout>
 )
