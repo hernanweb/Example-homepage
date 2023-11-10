@@ -28,7 +28,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       p={2}
-      bg={active ? 'grassTeal' : undefined}
+      bg={active ? '#81e6d9' : undefined}
       color={active ? '#202023' : inactiveColor}
       target={target}
       {...props}
@@ -81,7 +81,7 @@ const Navbar = props => {
             Works
           </LinkItem>
 
-          <LinkItem href="/" path={path}>
+          <LinkItem target="_blank" href="https://hernanblog.com" path={path}>
             Blogs
           </LinkItem>
       
@@ -100,7 +100,7 @@ const Navbar = props => {
 
           <LinkItem
             target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/hernanweb"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -108,7 +108,7 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoGithub />
-            Source
+            Recursos
           </LinkItem>
         </Stack>
 
@@ -127,7 +127,7 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/">
                   Acerca
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/">
+                <MenuItem target="_blank" as={MenuLink} href="https://hernanblog.com">
                   Blogs
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
@@ -140,7 +140,7 @@ const Navbar = props => {
                   as={Link}
                   href="https://github.com/hernanweb"
                 >
-                  View Source &nbsp; <IoLogoGithub />
+                  Recursos &nbsp; <IoLogoGithub />
                 </MenuItem>
               </MenuList>
             </Menu>

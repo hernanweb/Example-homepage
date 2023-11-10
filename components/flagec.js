@@ -15,16 +15,18 @@ const FlagBox = styled.span`
         transition: 200ms ease;
     }
     &:hover img {
-        transform: rotate(20deg);
+        transform: scale(1.5,1.5);
     }
     `
 
 const Flag = () => {
     const flagImg = `/images/flagec.png`
+    const buca = `/images/bucaram1.png`
     return (
-        <Link href="/">
+        <Link href="">
         <Link href="">
             <FlagBox>
+            
             <Text
                 color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                 fontFamily="M PLUS Rounded 1c"
@@ -32,10 +34,20 @@ const Flag = () => {
                 ml={3}
                 padding={2}
             >
-            Hi there! I&apos;m a web developer based in 
+            Based in 
             </Text>
-
-            <Image src={flagImg} width={35} height={25} alt="flag" />
+            <Image src={flagImg} width={35} height={25} alt="EC flag" />
+                
+            <Text
+                color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+                fontFamily="M PLUS Rounded 1c"
+                fontWeight="regular"
+                ml={3}
+                padding={2}
+            >
+            ¡Y ahoraaaa!
+            </Text> 
+            <Image src={buca} width={40} height={40} alt="Bucaram" />
             </FlagBox>
         </Link>
         </Link>

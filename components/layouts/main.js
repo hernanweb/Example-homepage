@@ -1,8 +1,9 @@
 import Head from 'next/head'
 /* import dynamic from 'next/dynamic' */
 import NavBar from '../navbar'
-import { Box, Container } from '@chakra-ui/react'
+import { Box, Container, Divider } from '@chakra-ui/react'
 import Footer from '../footer'
+import TMfooter from '../tmfooter'
 
 const Main = ({ children, router }) => {
   return (
@@ -32,7 +33,10 @@ const Main = ({ children, router }) => {
       <Container maxW="container.md" pt={14}>
         {children}
 
+        <br />
+        <Divider my={6} />
         <Footer />
+        <TMfooter />
       </Container>
     </Box>
   )

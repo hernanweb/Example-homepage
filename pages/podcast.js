@@ -50,8 +50,6 @@ const Podcast = () => (
       </Section>
 
       
-
-      <Divider my={6} />
     </Container>
   </Layout>
 )

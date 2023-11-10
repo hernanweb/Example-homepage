@@ -9,9 +9,9 @@ import {
   ListItem,
   useColorModeValue,
   chakra,
-  Divider
+  Badge
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, InfoOutlineIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -24,6 +24,8 @@ import {
 } from 'react-icons/io5'
 import Image from 'next/image'
 import Flag from '../components/flagec'
+
+
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -50,7 +52,9 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             HernánWeb
           </Heading>
-          <p>Web Developer</p>
+          <Badge>Web Developer</Badge><br />
+          <Badge>Make Internet Great Again! 🔥</Badge>
+          
         </Box>
         <Box
           flexShrink={0}
@@ -88,7 +92,7 @@ const Home = () => (
           <NextLink href="https://koonectic.com/" passHref scroll={false} target="_blank">
             <Link>Koonectic</Link>
           </NextLink>
-          , una plataforma de desarrollo y comunidad Tech. Te invito a visitar mi blog y a que te suscribas a mi newsletter, donde cada semana comparto un resumen de lo que está pasando en el mundo de la tecnología y los negocios digitales
+          , una plataforma de desarrollo y comunidad Tech. Te invito a visitar mi blog y a que te suscribas a mi newsletter donde cada semana comparto un resumen de lo que está pasando en el mundo de la tecnología y los negocios digitales
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -147,7 +151,7 @@ const Home = () => (
             <Link href="https://github.com/hernanweb" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="#eb5db4"
                 leftIcon={<IoLogoGithub />}
               >
                 @hernanweb
@@ -158,7 +162,7 @@ const Home = () => (
             <Link href="https://twitter.com/hernanwebec" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="#eb5db4"
                 leftIcon={<IoLogoTwitter />}
               >
                 @hernanwebec
@@ -169,7 +173,7 @@ const Home = () => (
             <Link href="https://www.facebook.com/hernanwebec" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="#eb5db4"
                 leftIcon={<IoLogoFacebook />}
               >
                 @hernanwebec
@@ -180,7 +184,7 @@ const Home = () => (
             <Link href="https://instagram.com/hernanwebec" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="#eb5db4"
                 leftIcon={<IoLogoInstagram />}
               >
                 @hernanwebec
@@ -197,17 +201,17 @@ const Home = () => (
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="https://www.devas.life/"
+            href="https://hernanblog.com/"
             scroll={false}
-            leftIcon={<EmailIcon />}
+            leftIcon={<InfoOutlineIcon />}
             colorScheme="teal"
+            target="_blank"
           >
-            Suscríbete a mi newsletter aquí 👈
+            Mira mi blog aquí 👈
           </Button>
         </Box>
       </Section>
 
-      <Divider my={6} />
     </Container>
   </Layout>
 )

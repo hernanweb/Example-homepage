@@ -3,10 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
+import thumKoonectic from '../public/images/works/koonectic-web.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -24,50 +21,46 @@ const Works = () => (
 
         <Section>
           <WorkGridItem 
-            id="inkdrop" 
-            title="Inkdrop" 
-            thumbnail={thumbInkdrop}
+            id="koonectic" 
+            title="Koonectic" 
+            thumbnail={thumKoonectic}
           >
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+            Koonectic es una comunidad de desarrolo tech
           </WorkGridItem>
         </Section>
 
         <Section>
-          <WorkGridItem
-            id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
-          >
-            Music recommendation app for iOS
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.1}>
-          <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
-          >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.1}>
           <WorkGridItem 
-          id="menkiki" 
-          thumbnail={thumbMenkiki} 
-          title="Menkiki"
+            id="koonectic" 
+            title="Koonectic" 
+            thumbnail={thumKoonectic}
           >
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+            Koonectic es una comunidad de desarrolo tech
           </WorkGridItem>
         </Section>
+
+        <Section>
+          <WorkGridItem 
+            id="koonectic" 
+            title="Koonectic" 
+            thumbnail={thumKoonectic}
+          >
+            Koonectic es una comunidad de desarrolo tech
+          </WorkGridItem>
+        </Section>
+
+        <Section>
+          <WorkGridItem 
+            id="koonectic" 
+            title="Koonectic" 
+            thumbnail={thumKoonectic}
+          >
+            Koonectic es una comunidad de desarrolo tech
+          </WorkGridItem>
+        </Section>        
+
+
       </SimpleGrid>
-
-
-      <Divider my={6} />
     </Container>
   </Layout>
 )
