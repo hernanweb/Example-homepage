@@ -23,7 +23,7 @@ import {
   IoLogoFacebook
 } from 'react-icons/io5'
 import Image from 'next/image'
-import Flag from '../components/flagec'
+//import Flag from '../components/flagec'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -42,7 +42,7 @@ const Home = () => (
         display="flex"
         justifyContent={'center'}
       >
-        <Flag />
+        //<Flag />
       </Box>
 
       <Box display={{ md: 'flex' }}>
