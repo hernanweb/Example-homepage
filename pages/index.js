@@ -42,7 +42,7 @@ const Home = () => (
         display="flex"
         justifyContent={'center'}
       >
-        //<Flag />
+
       </Box>
 
       <Box display={{ md: 'flex' }}>
