@@ -214,11 +214,10 @@ const Home = () => (
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="https://blog.hernanweb.com/"
+            href="/"
             scroll={false}
             leftIcon={<InfoOutlineIcon />}
             colorScheme="teal"
-            target="_blank"
           >
             Mira mi blog aquí 👈
           </Button>
